@@ -75,7 +75,12 @@ explore: fakeorders {
 
 explore: fatal_error_user_derived_base {}
 
-explore: flights {}
+explore: flights {
+  always_filter: {
+    filters: [destination: "SAN,SAT,SAV"]
+  }
+
+}
 
 explore: foo {}
 
