@@ -3,6 +3,7 @@ connection: "thelook"
 
 # include all the views
 include: "/views/**/*.view.lkml"
+include: "/**/*.dashboard"
 
 # Datagroups define a caching policy for an Explore. To learn more,
 # use the Quick Help panel on the right to see documentation.
@@ -76,9 +77,9 @@ explore: fakeorders {
 explore: fatal_error_user_derived_base {}
 
 explore: flights {
-  always_filter: {
-    filters: [destination: "SAN,SAT,SAV"]
-  }
+#  always_filter: {
+ #   filters: [destination: "SAN,SAT,SAV"]
+  #}
 
 }
 
